@@ -29,13 +29,13 @@ subroutine MatrixMatrixSimple(n, A, B, C)
 
   A = 0
   
-  do j=1,n
-  do i=1,n
-     A(i,j) = 0
-     do k=1,n      
-        A(i,j) = A(i,j) +  B(i,k) * C(k,j)
-     end do
-  end do
+  do j=1,n  ! Fortran stores colums
+      do i=1,n
+         !A(i,j) = 0  ! Just in case A = 0 does not work
+         do k=1,n      
+            A(i,j) = A(i,j) +  B(i,k) * C(k,j)
+         end do
+      end do
   end do
 
 

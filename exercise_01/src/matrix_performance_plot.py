@@ -22,7 +22,7 @@ plt.figure(1)
 
 plt.semilogy(n, baseline_time, '--o', label='Baseline')
 plt.semilogy(n, simple_time, '--o', label='Simple')
-plt.semilogy(n, blocked_time, '--o', label='Blocked')
+plt.semilogy(n, blocked_time, '--o', label='Blocked ($nn=50$)')
 
 plt.xlabel('System size $n$')
 plt.ylabel('Elapsed time $[s]$')
@@ -39,7 +39,7 @@ plt.figure(2)
 
 plt.semilogy(n, baseline_gflops, '--o', label='Baseline')
 plt.semilogy(n, simple_gflops, '--o', label='Simple')
-plt.semilogy(n, blocked_gflops, '--o', label='Blocked')
+plt.semilogy(n, blocked_gflops, '--o', label='Blocked ($nn=50$)')
 
 plt.xlabel('System size $n$')
 plt.ylabel('GFLOPS')

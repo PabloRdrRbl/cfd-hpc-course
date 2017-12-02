@@ -25,8 +25,7 @@ subroutine MatrixMatrixSimple(n, A, B, C)
   real(RDP), intent(in)  :: C(n,n)
 
   integer   :: i,j,k
-  real(RDP) :: tmp_sum
-
+  
   A = 0
   
   do j=1,n  ! Fortran stores colums

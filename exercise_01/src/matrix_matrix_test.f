@@ -19,8 +19,8 @@ program Stencil_Test
   use MPI_F08
   implicit none
 
-  integer,   parameter   :: N = 200            ! number of intervals
-  integer,   parameter   :: N_REPITITION = 100 ! number of repititions for test
+  integer,   parameter   :: N = 2000           ! number of intervals
+  integer,   parameter   :: N_REPITITION = 5 ! number of repititions for test
 
   real(RDP), parameter   :: FLOP          = 2 * real(N, RDP)**3
   real(RDP), parameter   :: FLOP_TO_GFLOP = 1e-9_RDP
